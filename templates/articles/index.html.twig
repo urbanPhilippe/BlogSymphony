@@ -8,5 +8,5 @@
     <h2>{{ article.title }}</h2>
     <div>{{ article.content|raw }}</div>
 {% endfor %}
-
+{{ knp_pagination_render(articles) }}
 {% endblock %}
